@@ -14,8 +14,6 @@ install:
 - npm install -g codecov
 script:
 - jest && codecov
-- npm run build
-- npm run build:releases
 jobs:
   include:
   - script: 
