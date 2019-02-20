@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+node_js:
+  - node
+  - 10
+  - 8
+cache:
+  - npm
+  - yarn
+  - directories:
+    - /home/travis/.rvm/
+script:
+- npm run build
+- npm run build:releases
+jobs:
+  include:
+    - script:

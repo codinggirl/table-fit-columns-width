@@ -1,0 +1,49 @@
+{
+  "name": "table-fit-columns-width",
+  "version": "0.0.0",
+  "description": "A helper libarary to fit a table's column width according to another table",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "build:lib": "cp ./src/*.js ./lib",
+    "build:doc:jsdoc": "npx jsdoc --readme README.md --package package.json --destination .build/docs/api --recurse ./src/*.js",
+    "build:doc:docco": "docco --output=.build/docs/code ./src/*.js",
+    "serve": "parcel servce src/*.pug",
+    "build": "parcel build src/*.pug",
+    "build:releases": "parcel build src/*.pug && (mkdir -p releases) && ((zip -r releases/dist.zip dist) & (tar zcvf releases/dist.tar.gz dist))",
+    "build:npm": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codinggirl/table-fit-columns-width.git"
+  },
+  "keywords": [
+    "table",
+    "html table",
+    "fit table",
+    "ajust table",
+    "table column"
+  ],
+  "author": "Richard Libre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codinggirl/table-fit-columns-width/issues"
+  },
+  "homepage": "https://github.com/codinggirl/table-fit-columns-width#readme",
+  "devDependencies": {
+    "docco": "^0.8.0",
+    "jest": "^24.1.0",
+    "jsdoc": "^3.5.5",
+    "jsdom": "^13.2.0",
+    "parcel": "^1.11.0",
+    "pug": "^2.0.3"
+  },
+  "jest": {
+    "testMatch": [
+      "**/test/**/*.[jt]s?(x)"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+
+.DS_Store*
+
+.idea
+.vscode
+.git
+.gitignore
+
+.build/
+.node_modules
+
+docs
+test
