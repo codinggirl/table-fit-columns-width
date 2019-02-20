@@ -1,6 +1,6 @@
 {
   "name": "table-fit-columns-width",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A helper libarary to fit a table's column width according to another table",
   "directories": {
     "doc": "docs"
