@@ -11,10 +11,8 @@
     "build:lib": "cp ./src/*.js ./lib",
     "build:doc:jsdoc": "npx jsdoc --readme README.md --package package.json --destination .build/docs/api --recurse ./src/*.js",
     "build:doc:docco": "docco --output=.build/docs/code ./src/*.js",
-    "serve": "parcel servce src/*.pug",
-    "build": "parcel build src/*.pug",
-    "build:releases": "parcel build src/*.pug && (mkdir -p releases) && ((zip -r releases/dist.zip dist) & (tar zcvf releases/dist.tar.gz dist))",
-    "build:npm": ""
+    "build:releases": "true",
+    "build:npm": "true"
   },
   "repository": {
     "type": "git",
