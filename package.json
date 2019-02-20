@@ -5,6 +5,7 @@
   "directories": {
     "doc": "docs"
   },
+  "main": "lib/fit-columns-width.js",
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
