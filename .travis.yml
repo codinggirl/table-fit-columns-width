@@ -13,11 +13,10 @@ install:
 - npm install -g jest
 - npm install -g codecov
 - npm install
-script:
-- jest && codecov
 jobs:
   include:
-  - script: 
+      - stage: codecov
+        script: jest && codecov
 env:
   global:
     secure: ohViUGZrEDntYcrxDm9pB01t14MW21Eq9EheSgKIQu6VAumJD6gCtzE6cf+XwWofsZ+NDJ+k5TaHinxEKq0ekZ1WD1WIAWENzcLnevFOJTBMsSzye+yXT2HOOS2kLyHIlb1jnHDj1QmcmYpdowihC8B9Zfu7ZnNd88n9LrgiFxFphg6nS3PHs08MgY9j3v+2nqDp7S6+jz/tV97Jbb4W0mEG02jh5l2qX59XKFKcfhpXjIyA88bgRIlMU1wXrlJuS1WwQRTxaZ11ISbWcuPbpvq/1/M1qRPh/6hl6rTWnWsSYz7PWj+Zm/unALfJZcBtXOiDyfuK2bFFmjZAQ9cMmnxHmu0LJfYSM/ZIEad1LnjiWdlcRL4xfG+8K0BMabwxYRTroMIozwQFhiCNe/pkI8EDsVdDXE2uIx9yNlCZf4U4nWkRqHs1AfmPObamVIslIWW3DTAVe56Rr6TuA3Hhdwn0hhqVzingxhB6hPjupja3X0XbxxN52wXHQ/+8QFaaWPh++nJxi6efxsug3l5r65MMAV4/bqQuecVbP7WmmeI/FoqXlSf+Cf1vykGZ646ikoMSfkgRiaFXlZ4qGQyn2NlEzgrDnOQGTYMjKMvPnfz9upUQ966fGrIiTL2QwlEzUq/KJ5xIgq+pI4J8acSAfTXDZZ2FKS9C1QYOim0U3Eo=
