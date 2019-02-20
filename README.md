@@ -1,5 +1,7 @@
 # table-fit-columns-width
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/codinggirl/table-fit-columns-width.svg)](https://greenkeeper.io/)
+
 A helper libarary to fit a table's column width according to another table.
 
 ## How to use
