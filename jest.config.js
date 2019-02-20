@@ -1,5 +1,7 @@
 let opts = {
-    testRegex: '/test/.*\\.[jt]sx?$',
+    testMatch: [
+        "**/test/**/*.[jt]s?(x)"
+    ],
     coverageDirectory: '.build/coverage'
 }
 
