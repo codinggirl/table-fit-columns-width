@@ -34,7 +34,7 @@
   "homepage": "https://github.com/codinggirl/table-fit-columns-width#readme",
   "devDependencies": {
     "docco": "^0.8.0",
-    "jest": "^24.1.0",
+    "jest": "^26.5.0",
     "jsdoc": "^3.5.5",
     "jsdom": "^13.2.0"
   }
